@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+<script src="scripts.js"></script>
+
 </head>
 
 
@@ -22,14 +24,24 @@
             to help us improve our offering!
             </p>
             <div class="ratings">
-                <div class="rating">1</div>
-                <div class="rating">2</div>
-                <div class="rating">3</div>
-                <div class="rating">4</div>
-                <div class="rating">5</div>
+                <button value='1' onclick = 'choosenButton()' class="rating-button">1</button>
+                <button value='2'onclick = 'choosenButton()' class="rating-button">2</button>
+                <button value='3'onclick = 'choosenButton()' class="rating-button">3</button>
+                <button value='4'onclick = 'choosenButton()' class="rating-button">4</button>
+                <button value='5'onclick = 'choosenButton()' class="rating-button">5</button>
             </div>
-            <button type="submit">SUBMIT</button>
-
+            <button type="submit" class="submit-button" onclick="submitButton()">SUBMIT</button>
+        </section>
+        <section class="thank-you-section">
+            <img src="/interactive-rating-component-main/images/illustration-thank-you.svg">
+            <div class="rating-selected">
+                <p class="you-selected">You selected out of 5</p>
+            </div>
+            <h2>Thank you!</h2>
+            <p>
+                We appreciate you taking the time to give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!   
+            </p>
         </section>
     </main>
 </body>
