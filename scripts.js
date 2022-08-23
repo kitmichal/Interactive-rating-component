@@ -20,7 +20,7 @@
 }*/
 
 function choosenButton(){
-    return event.target.value;
+    return event.target.value;;
     
 }
 
@@ -29,18 +29,18 @@ function submitButton(){
     document.getElementsByClassName('submit-section')[0].style.display = 'none';
     document.getElementsByClassName('thank-you-section')[0].style.display = 'flex';
     
-    if(choosenButton='1')
+    if(choosenButton()==='1')
     document.getElementsByClassName('you-selected')[0].innerHTML = 'You selected 1 out of 5'
-    else if(choosenButton()='2'){
+    else if(choosenButton()==='2'){
         document.getElementsByClassName('you-selected')[0].innerHTML = 'You selected 2 out of 5'
     }
-    else if(choosenButton()='3'){
+    else if(choosenButton()==='3'){
         document.getElementsByClassName('you-selected')[0].innerHTML = 'You selected 3 out of 5'
     }
-    else if(choosenButton()='4'){
+    else if(choosenButton()==='4'){
         document.getElementsByClassName('you-selected')[0].innerHTML = 'You selected 4 out of 5'
     }
-    else if(choosenButton()='5'){
+    else if(choosenButton()==='5'){
         document.getElementsByClassName('you-selected')[0].innerHTML = 'You selected 5 out of 5'
     }
 }

@@ -8,9 +8,7 @@
     --very-dark-blue:hsl(216, 12%, 8%);
 }
 
-*{
-    
-}
+
 
 body{
     background-color:var(--very-dark-blue);
